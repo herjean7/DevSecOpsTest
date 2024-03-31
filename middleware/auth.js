@@ -37,4 +37,4 @@ exports.APIAuth = asyncHandler(asyncHandler(async (req, res, next) => {
 
     // If all checks pass, continue to the next middleware or route handler
     next();
-})
+}));
