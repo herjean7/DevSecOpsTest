@@ -12,9 +12,9 @@ jobs:
         node-version: 18
         cache: npm
     - name: Install dependencies
-    - run: npm install
+      run: npm install
     - name: Test and coverage
-    - run: npm jest --coverage
+      run: npm jest --coverage
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
