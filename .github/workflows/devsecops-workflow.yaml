@@ -48,5 +48,3 @@ jobs:
         uses: zaproxy/action-baseline@v0.11.0
         with:
           target: 'http://example.com/'
-          rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a'
