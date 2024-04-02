@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/wonghejun/Desktop/DevSecOpsTest/DevSecOpsTest/tests/todo.controller.test.js">
+    <testCase name="TodoController.deleteTodo should have a deleteTodo function" duration="4"/>
+    <testCase name="TodoController.deleteTodo should call findByIdAndDelete" duration="1"/>
+    <testCase name="TodoController.deleteTodo should return 200 ok and deleted todomodel" duration="1"/>
+    <testCase name="TodoController.deleteTodo should handle errors" duration="1"/>
+    <testCase name="TodoController.deleteTodo should handle 404" duration="1"/>
+    <testCase name="TodoController.updateTodo should have a updateTodo" duration="0"/>
+    <testCase name="TodoController.updateTodo should update with TodoModel.findByIdAndUpdate" duration="1"/>
+    <testCase name="TodoController.updateTodo should return a response with json data and http code 200" duration="0"/>
+    <testCase name="TodoController.updateTodo should handle errors" duration="0"/>
+    <testCase name="TodoController.updateTodo should return 404 when item doesnt exist" duration="3"/>
+    <testCase name="TodoController.getTodoById should have a getTodoById" duration="0"/>
+    <testCase name="TodoController.getTodoById should call TodoModel.findById with route parameters" duration="1"/>
+    <testCase name="TodoController.getTodoById should return json body and response code 200" duration="0"/>
+    <testCase name="TodoController.getTodoById should handle errors" duration="0"/>
+    <testCase name="TodoController.getTodoById should return 404 when item doesn&apos;t exist" duration="1"/>
+    <testCase name="TodoController.getTodos should have a getTodos function" duration="0"/>
+    <testCase name="TodoController.getTodos should call TodoModel.find({})" duration="0"/>
+    <testCase name="TodoController.getTodos should return response with status 200 and all todos" duration="0"/>
+    <testCase name="TodoController.getTodos should handle errors" duration="0"/>
+    <testCase name="TodoController.createTodo should have a createTodo function" duration="0"/>
+    <testCase name="TodoController.createTodo should call TodoModel.create" duration="0"/>
+    <testCase name="TodoController.createTodo should return 201 response code" duration="0"/>
+    <testCase name="TodoController.createTodo should return json body in response" duration="0"/>
+    <testCase name="TodoController.createTodo should handle errors" duration="1"/>
+  </file>
+</testExecutions>
