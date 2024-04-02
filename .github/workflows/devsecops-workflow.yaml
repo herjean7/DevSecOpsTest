@@ -2,7 +2,7 @@ name: Build code, run unit test, run SAST, SCA, DAST security scans for NodeJs A
 on: push
 
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
     name: Run unit tests and SAST scan on the source code 
     steps:
@@ -26,7 +26,7 @@ jobs:
           -Dsonar.projectKey=devsecopsdemoorg_devsecopstestproject
   SCA:
     runs-on: ubuntu-latest
-    needs: build
+    needs: Build
     name: Run the SCA scan on the source code
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   DAST:
     runs-on: ubuntu-latest
-    needs: security
+    needs: SCA
     name: Run DAST scan on the web application
     steps:
       - name: Checkout
