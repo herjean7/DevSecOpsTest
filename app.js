@@ -52,21 +52,21 @@ app.use(hpp());
 
 //CORS
 
-const whitelist = ['http://localhost:4000']; 
+// const whitelist = ['http://localhost:4000']; 
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
-//app.use(cors());
+app.use(cors());
 
 //Routes
 const todoRoutes = require('./routes/todo.routes');
