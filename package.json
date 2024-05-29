@@ -21,7 +21,7 @@
     "hpp": "^0.2.3",
     "mongoose": "^6.4.7",
     "morgan": "^1.10.0",
-    "node-mocks-http": "^1.11.0"
+    "node-mocks-http": "^1.14.1"
   },
   "devDependencies": {
     "env": "0.0.2",
